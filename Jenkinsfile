@@ -1,6 +1,10 @@
 pipeline {
 agent any
 
+tools {
+    maven "M3"
+}
+
 stages {
     stage ('Print Information') {
         steps {
@@ -10,7 +14,13 @@ stages {
 
     stage ('Unit Test') {
         steps {
-            sh 'mvn clean test sonar:sonar'
+            sh 'mvn clean test'
+        }
+    }
+
+    stage ('Deploy to Artifact') {
+        steps {
+            sh 'mvn clean deploy -DskipTests'
         }
     }
 
