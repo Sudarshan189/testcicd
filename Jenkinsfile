@@ -8,6 +8,12 @@ stages {
         }
     }
 
+    stage ('Unit Test') {
+        steps {
+            sh 'mvn clean test sonar:sonar'
+        }
+    }
+
     stage ('Competing Build') {
         steps {
             echo "Build Completed for ${BUILD_NUMBER}"
