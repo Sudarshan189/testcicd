@@ -46,12 +46,12 @@
 		<repository>
 			<id>central</id>
 			<name>a0zsgxmdzlldw-artifactory-primary-0-releases</name>
-			<url>https://cmrroutine.jfrog.io/artifactory/default-maven-virtual</url>
+			<url>https://cmrroutine.jfrog.io/artifactory/routine-libs-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>a0zsgxmdzlldw-artifactory-primary-0-snapshots</name>
-			<url>https://cmrroutine.jfrog.io/artifactory/default-maven-virtual</url>
+			<url>https://cmrroutine.jfrog.io/artifactory/routine-libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
