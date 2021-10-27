@@ -12,17 +12,12 @@ stages {
         }
     }
 
-    stage ('Unit Test') {
-        steps {
-            sh 'mvn clean test'
-        }
-    }
-
     stage ('Deploy to Artifact') {
         steps {
             sh 'mvn clean deploy -DskipTests'
         }
     }
+
 
     stage ('Competing Build') {
         steps {
