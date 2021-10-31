@@ -18,12 +18,18 @@ stages {
         }
     }
 
-
-    stage ('Competing Build') {
+    stage ('Competing Deployment to artifact') {
         steps {
             echo "Build Completed for ${BUILD_NUMBER}"
         }
     }
+
+    stage ('Increase Maven Version') {
+        steps {
+            sh "mvn build-helper:parse-version versions:set \-DnewVersion=\${parsedVersion.nextMajorVersion}.0.0 versions:commit"
+        }
+    }
+
 }
 
 }
