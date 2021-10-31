@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sudarshan</groupId>
 	<artifactId>testcicd</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>testcicd</name>
 	<description>This project will help us to test the CI/CD</description>
 	<properties>
@@ -39,6 +39,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-jsonSchema</artifactId>
+			<version>2.13.0</version>
 		</dependency>
 	</dependencies>
 
