@@ -16,6 +16,13 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
+	<scm>
+		<connection>scm:git:git://github.com/Sudarshan189/testcicd.git</connection>
+		<developerConnection>scm:git:git://github.com/Sudarshan189/testcicd.git</developerConnection>
+		<url>https://github.com/Sudarshan189/testcicd.git</url>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
