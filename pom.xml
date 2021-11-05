@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sudarshan</groupId>
 	<artifactId>testcicd</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>2.0.0</version>
 	<name>testcicd</name>
 	<description>This project will help us to test the CI/CD</description>
 	<properties>
